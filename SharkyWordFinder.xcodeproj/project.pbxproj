@@ -9,21 +9,43 @@
 /* Begin PBXBuildFile section */
 		FC9726B224422DA900C30B2D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726B124422DA900C30B2D /* AppDelegate.swift */; };
 		FC9726B424422DA900C30B2D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726B324422DA900C30B2D /* SceneDelegate.swift */; };
-		FC9726B624422DA900C30B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726B524422DA900C30B2D /* ViewController.swift */; };
 		FC9726B924422DA900C30B2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9726B724422DA900C30B2D /* Main.storyboard */; };
 		FC9726BB24422DAB00C30B2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC9726BA24422DAB00C30B2D /* Assets.xcassets */; };
 		FC9726BE24422DAB00C30B2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC9726BC24422DAB00C30B2D /* LaunchScreen.storyboard */; };
+		FC9726D224422EB400C30B2D /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726CB24422EB400C30B2D /* UIButtonExtension.swift */; };
+		FC9726D324422EB400C30B2D /* GameWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726CC24422EB400C30B2D /* GameWord.swift */; };
+		FC9726D424422EB400C30B2D /* Shark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726CD24422EB400C30B2D /* Shark.swift */; };
+		FC9726D524422EB400C30B2D /* BalloonMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726CE24422EB400C30B2D /* BalloonMan.swift */; };
+		FC9726D624422EB400C30B2D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726CF24422EB400C30B2D /* Model.swift */; };
+		FC9726D724422EB400C30B2D /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726D024422EB400C30B2D /* DataModel.swift */; };
+		FC9726D824422EB400C30B2D /* WordManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726D124422EB400C30B2D /* WordManipulator.swift */; };
+		FC9726DE24422EE400C30B2D /* Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726DA24422EE300C30B2D /* Controller.swift */; };
+		FC9726DF24422EE400C30B2D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726DB24422EE400C30B2D /* ViewController.swift */; };
+		FC9726E024422EE400C30B2D /* TimeFractionProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726DC24422EE400C30B2D /* TimeFractionProgressView.swift */; };
+		FC9726E124422EE400C30B2D /* OpeningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9726DD24422EE400C30B2D /* OpeningViewController.swift */; };
+		FC9726E424422FF000C30B2D /* Images in Resources */ = {isa = PBXBuildFile; fileRef = FC9726E324422FF000C30B2D /* Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FC9726AE24422DA900C30B2D /* SharkyWordFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharkyWordFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC9726B124422DA900C30B2D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC9726B324422DA900C30B2D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FC9726B524422DA900C30B2D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FC9726B824422DA900C30B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FC9726BA24422DAB00C30B2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC9726BD24422DAB00C30B2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC9726BF24422DAB00C30B2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC9726CB24422EB400C30B2D /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		FC9726CC24422EB400C30B2D /* GameWord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWord.swift; sourceTree = "<group>"; };
+		FC9726CD24422EB400C30B2D /* Shark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shark.swift; sourceTree = "<group>"; };
+		FC9726CE24422EB400C30B2D /* BalloonMan.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BalloonMan.swift; sourceTree = "<group>"; };
+		FC9726CF24422EB400C30B2D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FC9726D024422EB400C30B2D /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		FC9726D124422EB400C30B2D /* WordManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManipulator.swift; sourceTree = "<group>"; };
+		FC9726DA24422EE300C30B2D /* Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Controller.swift; sourceTree = "<group>"; };
+		FC9726DB24422EE400C30B2D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC9726DC24422EE400C30B2D /* TimeFractionProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeFractionProgressView.swift; sourceTree = "<group>"; };
+		FC9726DD24422EE400C30B2D /* OpeningViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpeningViewController.swift; sourceTree = "<group>"; };
+		FC9726E324422FF000C30B2D /* Images */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Images; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +78,50 @@
 		FC9726B024422DA900C30B2D /* SharkyWordFinder */ = {
 			isa = PBXGroup;
 			children = (
+				FC9726E224422F1000C30B2D /* View */,
+				FC9726D924422EC900C30B2D /* Controller */,
+				FC9726CA24422E9A00C30B2D /* Model */,
 				FC9726B124422DA900C30B2D /* AppDelegate.swift */,
 				FC9726B324422DA900C30B2D /* SceneDelegate.swift */,
-				FC9726B524422DA900C30B2D /* ViewController.swift */,
-				FC9726B724422DA900C30B2D /* Main.storyboard */,
 				FC9726BA24422DAB00C30B2D /* Assets.xcassets */,
+				FC9726E324422FF000C30B2D /* Images */,
 				FC9726BC24422DAB00C30B2D /* LaunchScreen.storyboard */,
 				FC9726BF24422DAB00C30B2D /* Info.plist */,
 			);
 			path = SharkyWordFinder;
+			sourceTree = "<group>";
+		};
+		FC9726CA24422E9A00C30B2D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FC9726CE24422EB400C30B2D /* BalloonMan.swift */,
+				FC9726D024422EB400C30B2D /* DataModel.swift */,
+				FC9726CC24422EB400C30B2D /* GameWord.swift */,
+				FC9726CF24422EB400C30B2D /* Model.swift */,
+				FC9726CD24422EB400C30B2D /* Shark.swift */,
+				FC9726CB24422EB400C30B2D /* UIButtonExtension.swift */,
+				FC9726D124422EB400C30B2D /* WordManipulator.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FC9726D924422EC900C30B2D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FC9726DA24422EE300C30B2D /* Controller.swift */,
+				FC9726DD24422EE400C30B2D /* OpeningViewController.swift */,
+				FC9726DC24422EE400C30B2D /* TimeFractionProgressView.swift */,
+				FC9726DB24422EE400C30B2D /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FC9726E224422F1000C30B2D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FC9726B724422DA900C30B2D /* Main.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +182,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC9726E424422FF000C30B2D /* Images in Resources */,
 				FC9726BE24422DAB00C30B2D /* LaunchScreen.storyboard in Resources */,
 				FC9726BB24422DAB00C30B2D /* Assets.xcassets in Resources */,
 				FC9726B924422DA900C30B2D /* Main.storyboard in Resources */,
@@ -138,9 +196,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC9726B624422DA900C30B2D /* ViewController.swift in Sources */,
+				FC9726D424422EB400C30B2D /* Shark.swift in Sources */,
+				FC9726E024422EE400C30B2D /* TimeFractionProgressView.swift in Sources */,
+				FC9726DE24422EE400C30B2D /* Controller.swift in Sources */,
+				FC9726D224422EB400C30B2D /* UIButtonExtension.swift in Sources */,
+				FC9726D524422EB400C30B2D /* BalloonMan.swift in Sources */,
 				FC9726B224422DA900C30B2D /* AppDelegate.swift in Sources */,
+				FC9726DF24422EE400C30B2D /* ViewController.swift in Sources */,
 				FC9726B424422DA900C30B2D /* SceneDelegate.swift in Sources */,
+				FC9726E124422EE400C30B2D /* OpeningViewController.swift in Sources */,
+				FC9726D824422EB400C30B2D /* WordManipulator.swift in Sources */,
+				FC9726D324422EB400C30B2D /* GameWord.swift in Sources */,
+				FC9726D624422EB400C30B2D /* Model.swift in Sources */,
+				FC9726D724422EB400C30B2D /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
