@@ -262,7 +262,7 @@ open class TimeFractionProgressView : UIView {
     fileprivate func commonSetup() {
         let displayLink = CADisplayLink(target: self, selector: #selector(TimeFractionProgressView.animateProgress(_:)))
         displayLink.isPaused = true
-        displayLink.add(to: RunLoop.main, forMode: RunLoopMode.commonModes)
+        displayLink.add(to: RunLoop.main, forMode: RunLoop.Mode.common)
         self.displayLink = displayLink
     }
     
@@ -362,7 +362,7 @@ open class TimeFractionProgressView : UIView {
     }
 
     deinit {
-        displayLink?.remove(from: RunLoop.main, forMode: RunLoopMode.commonModes)
+        displayLink?.remove(from: RunLoop.main, forMode: RunLoop.Mode.common)
         displayLink = nil
         
         for timeFraction in fractions {

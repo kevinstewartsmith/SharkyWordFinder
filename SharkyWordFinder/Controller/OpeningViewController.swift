@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-import BKCountDownTimer
+
 //import SRCountdownTimer
 class OpeningViewController: UIViewController {
     @IBOutlet weak var buttonCounter: UILabel?
     var count : Int = 0
-    var vwCircle = CircleTic()
+    
     func resetButtonPressed(){
         count+=1
         let countString: String? = String(count)
@@ -36,11 +36,7 @@ class OpeningViewController: UIViewController {
         buttonCounter?.text = "Whoa"
         count = 0
         print(buttonCounter?.text)
-        vwCircle.startTimer(block: { (count, minute, second) in
-            print("\(minute) : \(second)")
-        }) {
-            print("complete")
-        }
+
     }
     
     

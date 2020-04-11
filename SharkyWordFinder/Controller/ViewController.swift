@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var numGuessesLeft: UILabel!
     @IBOutlet weak var outcomeLabel: UILabel!
     @IBOutlet weak var water: UIImageView!
+    
     @IBOutlet weak var bloodyShark: UIImageView!
     @IBOutlet weak var fukkYoo: UIImageView!
     @IBOutlet weak var balloonMan: UIImageView!
@@ -126,11 +127,11 @@ class ViewController: UIViewController {
 
         sharkImage.transform = CGAffineTransform(scaleX: 2, y: 2)
         
-        bloodyShark.animationImages = [
-            UIImage(named: "shark")!,
-            UIImage(named: "flippedShark")!,
-            
-        ]
+//        bloodyShark.animationImages = [
+//            UIImage(named: "shark")!,
+//            UIImage(named: "flippedShark")!,
+//            
+//        ]
         print("view did load")
         
         water.frame.origin.y = 200
