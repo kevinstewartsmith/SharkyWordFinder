@@ -33,27 +33,20 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SharkyWordFinder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3gi-qA-ecj">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3gi-qA-ecj">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1v4-Zq-RCs">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1v4-Zq-RCs">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="528"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bloodyshark" translatesAutoresizingMaskIntoConstraints="NO" id="Lm3-ji-YYq">
                                                 <rect key="frame" x="100" y="206" width="240" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYc-vO-mHq">
-                                                <rect key="frame" x="199" y="259" width="42" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GF-Wq-fmL">
                                                 <rect key="frame" x="214" y="259" width="11" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -88,93 +81,100 @@
                                                     <action selector="resetButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0VO-dW-baY"/>
                                                 </connections>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYc-vO-mHq">
+                                                <rect key="frame" x="183" y="106" width="109" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w5n-IU-Qgh" userLabel="KeyBoard">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w5n-IU-Qgh" userLabel="KeyBoard">
                                         <rect key="frame" x="0.0" y="528" width="414" height="290"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Xmu-Oj-naH" userLabel="FullKeyboard">
-                                                <rect key="frame" x="0.0" y="0.0" width="415" height="291"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="415" height="294"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Sw4-yT-CUK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="415" height="97"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="415" height="98"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spg-oA-ALP">
-                                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="41.5" height="98"/>
                                                                 <state key="normal" title="Q"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQM-8G-qVf"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WcJ-O6-nxJ">
-                                                                <rect key="frame" x="41.5" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="41.5" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="W"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IHe-Y0-ULG"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Wse-e1-1ob">
-                                                                <rect key="frame" x="83" y="0.0" width="41" height="97"/>
+                                                                <rect key="frame" x="83" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="E"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uWK-xE-Z5e"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ise-NK-obb">
-                                                                <rect key="frame" x="124" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="124.5" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="R"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNu-fy-egQ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mhF-N1-9PE">
-                                                                <rect key="frame" x="165.5" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="166" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="T"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sod-T7-SMR"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="pKc-fd-WEz">
-                                                                <rect key="frame" x="207" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="207.5" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="Y"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TDg-Bs-K77"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pcs-b7-AUB">
-                                                                <rect key="frame" x="248.5" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="249" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="U"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CsW-gT-i0Y"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iaT-u1-ChA">
-                                                                <rect key="frame" x="290" y="0.0" width="41" height="97"/>
+                                                                <rect key="frame" x="290.5" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="I"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXd-Ub-XyV"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="KAy-U8-SRw">
-                                                                <rect key="frame" x="331" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="332" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="O"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O6J-mL-GA6"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gP4-MN-sQ6">
-                                                                <rect key="frame" x="372.5" y="0.0" width="41.5" height="97"/>
+                                                                <rect key="frame" x="373.5" y="0.0" width="41.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="Q"/>
+                                                                <state key="normal" title="P"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qck-0v-rRH"/>
                                                                 </connections>
@@ -183,27 +183,138 @@
                                                         <color key="backgroundColor" red="0.9153020977973938" green="0.30796343088150024" blue="0.30778831243515015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="90f-6g-WXb">
-                                                        <rect key="frame" x="0.0" y="97" width="415" height="97"/>
+                                                        <rect key="frame" x="0.0" y="98" width="415" height="98"/>
                                                         <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2ji-TS-yls">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WpV-ES-m7W">
+                                                                <rect key="frame" x="0.0" y="0.0" width="46" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="A"/>
                                                                 <connections>
-                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CKp-dz-ewH"/>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HQD-it-ZCH"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0AH-QW-qVh">
+                                                                <rect key="frame" x="46" y="0.0" width="46" height="98"/>
+                                                                <state key="normal" title="S"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1AQ-RI-qGL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ouB-9j-BUK">
+                                                                <rect key="frame" x="92" y="0.0" width="46.5" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="D"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R8g-3k-eGb"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fx7-Gy-DUH">
+                                                                <rect key="frame" x="138.5" y="0.0" width="46" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="F"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ID6-xi-Cif"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GSc-Z8-w3V">
+                                                                <rect key="frame" x="184.5" y="0.0" width="46" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="G"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cnh-9x-sNG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="93Y-gT-OGs">
+                                                                <rect key="frame" x="230.5" y="0.0" width="46" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="H"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="51W-uS-zsg"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="erz-hi-S72">
+                                                                <rect key="frame" x="276.5" y="0.0" width="46.5" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="J"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wQv-yu-mpq"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HCO-NV-J4N">
+                                                                <rect key="frame" x="323" y="0.0" width="46" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="K"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Peu-3d-g43"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sjk-br-45m" userLabel="L">
+                                                                <rect key="frame" x="369" y="0.0" width="46" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="Q"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mQS-wo-VNc"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ek9-2F-jah">
-                                                        <rect key="frame" x="0.0" y="194" width="415" height="97"/>
+                                                        <rect key="frame" x="0.0" y="196" width="415" height="98"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Q1g-Zx-tDO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="97"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="59.5" height="98"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <state key="normal" title="Z"/>
                                                                 <connections>
                                                                     <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nzh-Ko-LlX"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TnM-Pg-dYR">
+                                                                <rect key="frame" x="59.5" y="0.0" width="59" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="X"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vnz-3Y-5h8"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yc4-rk-bUD">
+                                                                <rect key="frame" x="118.5" y="0.0" width="59.5" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="C"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FLP-ld-Exc"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="rb5-hy-enS">
+                                                                <rect key="frame" x="178" y="0.0" width="59" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="V"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tNt-7s-rRL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="U0W-7K-BS9">
+                                                                <rect key="frame" x="237" y="0.0" width="59.5" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="B"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zvc-DE-FPN"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="za4-Wf-Zi3">
+                                                                <rect key="frame" x="296.5" y="0.0" width="59" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="N"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PSv-bb-dDx"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DNx-JX-efe">
+                                                                <rect key="frame" x="355.5" y="0.0" width="59.5" height="98"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" title="M"/>
+                                                                <connections>
+                                                                    <action selector="letterButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B5t-59-9hL"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -211,7 +322,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="Xmu-Oj-naH" secondAttribute="trailing" id="8cf-eI-vsC"/>
                                             <constraint firstItem="Xmu-Oj-naH" firstAttribute="top" secondItem="w5n-IU-Qgh" secondAttribute="top" id="GdW-NT-gZo"/>
@@ -247,7 +358,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="120"/>
+            <point key="canvasLocation" x="137.68115942028987" y="119.86607142857142"/>
         </scene>
     </scenes>
     <resources>
