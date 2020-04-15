@@ -5,7 +5,6 @@
 //  Created by Kevin Smith on 2/2/20.
 //  Copyright © 2020 Kevin Smith. All rights reserved.
 //
-
 import Foundation
 import UIKit
 
@@ -77,3 +76,4 @@ extension UIButton {
       }
 
 }
+

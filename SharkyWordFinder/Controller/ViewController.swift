@@ -11,6 +11,7 @@ import CoreGraphics
 import CoreImage
 
 
+
 class ViewController: UIViewController {
     
 
@@ -103,16 +104,7 @@ class ViewController: UIViewController {
         }
     }
 
-    func resizedImage(at url: URL, for size: CGSize) -> UIImage? {
-        guard let image = UIImage(named: "shark3.jpg") else {
-            return nil
-        }
 
-        let renderer = UIGraphicsImageRenderer(size: size)
-        return renderer.image { (context) in
-            image.draw(in: CGRect(origin: .zero, size: size))
-        }
-    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -210,7 +202,11 @@ class ViewController: UIViewController {
     }
     func sharkFlips(){
         var flippedImage = self.bloodyShark.image
-        flippedImage = bloodyShark.image?.withHorizontallyFlippedOrientation()
+        if #available(iOS 10.0, *) {
+            flippedImage = bloodyShark.image?.withHorizontallyFlippedOrientation()
+        } else {
+            // Fallback on earlier versions
+        }
         bloodyShark.image = flippedImage
         print("Shark flips")
     }
